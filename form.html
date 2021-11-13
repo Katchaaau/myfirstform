@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    header {
+
+        display: block;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 700;
+
+
+
+
+    }
+
+    body {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: justify;
+        align-items: center;
+        padding: 40px;
+        margin: 40px;
+        background: linear-gradient(135deg, #14156b, #6dcef5, #295d72);
+    }
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 20px 30PX;
+        border-radius: 05px;
+        position: relative;
+        height: 101%;
+        box-shadow: 3px 3px rgba(20, 20, 20, 0.253);
+
+    }
+
+    .container #surver-form {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #survey-form {
+
+        width: calc(100% / - 20px);
+        justify-content: space-between;
+        height: auto;
+        font-weight: 600;
+        font-family: 'IBM Plex Sans', sans-serif;
+
+
+    }
+
+    textarea {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        height: 150px;
+
+    }
+
+    button {
+        width: 100%;
+        margin-left: 4px;
+        margin-top: 10px;
+        height: 40px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bold;
+        background: linear-gradient(135deg, #14156b, #6dcef5, #295d72);
+        border: none;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    }
+
+    button:hover {
+        display: block;
+        margin-top: 10px;
+        background: linear-gradient(-135deg, #14156b, #6dcef5, #295d72);
+    }
+
+    input {
+        margin: 5px;
+        padding: 1px;
+    }
+
+    select {
+        width: 130px;
+        height: 030px;
+        
+
+    }
+</style>
+
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=IBM+Plex+Sans:wght@100&family=Oswald:wght@200;500&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+        <h1 id="title" class="title"> <strong> News letter </strong> </h1>
+        <h4> subscribe here</h4>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="survey-form">
+                <label for="name" id="name-label">
+                    Name
+                    <input id=name type="text" required placeholder="name">
+                </label>
+
+                <label for="email" id="email-label">
+                    E-mail </label>
+                <input id="email" type="email" required placeholder="e-mail">
+                </label>
+
+                <label for="age number" id="number-label"> Age (optional) </label>
+                <input id="number" type="number" placeholder="number" min="0" max="99">
+
+                <p> How much do you like our news? </p>
+                <select id="dropdown" name="feeling" required>
+                    <option value=" A little "> A little </option>
+                    <option value="normal"> Normal </option>
+                    <option value="I kinda like it"> I kinda like it </option>
+                    <option value="I love it"> I love it </option>
+                </select>
+
+                <p> Would you recommend our page to a friend?</p>
+                <input name="user-recommend" value="definitely" type="radio" checked>
+                Definitely
+                </input>
+                <input name="user-recommend" value="maybe" type="radio"> Maybe </input>
+
+                <input name="user-recommend" value="yes" type="radio"> Yes </input>
+
+                <input name="user-recommend" value="sure" type="radio"> Sure </input>
+
+                <p> Which themes you like most? </p>
+                <input name="prefer" type="checkbox" value="anime"> Anime</input>
+                <input name="prefer" type="checkbox" value="Jornal"> Jornal</input>
+                <input name="prefer" type="checkbox" value="Series"> Series </input>
+                <input name="prefer" type="checkbox" value="Movies"> Movies </input>
+                <input name="prefer" type="checkbox" value="Animations"> Animations </inputs>
+
+
+                <p> What you think we could do better?</p>
+                <textarea id="comments" name="comment" placheholder="Enter your comment here..."> </textarea>
+                <button type="submit" id="submit"> SUBMIT </button>
+        </div>
+        </form>
+    </main>
+
+</body>
